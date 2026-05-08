@@ -4,7 +4,8 @@ from abstract_system_encoder import *
 FIB_MAX=84
 def load_code(ramState):
     mul_prog=[
-    [MUL,R3,R1,R2]            
+    [MUL,R3,R1,R2],
+    [ADD,R1,R2,R3]     
     ]
         
     mul_iws=encodeProgram(mul_prog)
